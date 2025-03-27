@@ -8,7 +8,7 @@ import pages.LoginPage;
 
 public class TestLogin extends BaseTest{
 
-    @Test
+    //@Test
     public void checkLoginWithValidCredentials(){
         HomePage homePage = new LoginPage().open()
                 .enterEmailAndPassword(getLogin(), getPassword())

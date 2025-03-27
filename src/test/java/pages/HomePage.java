@@ -8,7 +8,6 @@ public class HomePage{
     private final SelenideElement avatar = $x("//div[@class='toolbar_avatar']");
     private final SelenideElement friendsButton = $x("//a[contains(@href, '/friends')] |" +
             " //span[text()='Друзья']/..");
-
     public boolean isAvatarAvailable(){
         return avatar.isDisplayed();
     }

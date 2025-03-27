@@ -2,7 +2,11 @@ package pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+
+import java.time.Duration;
+
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
 
 public class LoginPage{
     private final SelenideElement emailField = $x("//input[@name='st.email']");
