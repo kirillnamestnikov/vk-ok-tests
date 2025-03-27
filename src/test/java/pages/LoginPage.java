@@ -14,7 +14,7 @@ public class LoginPage{
     private final SelenideElement submitButton = $x("//input[@value='Войти в Одноклассники']");
 
     public LoginPage open(){
-        Selenide.open("/");
+        Selenide.open("https://ok.ru/dk?st.cmd=anonymMain");
         return this;
     }
 

@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.jupiter.api.Order;
 import pages.HomePage;
 import pages.LoginPage;
 import org.junit.jupiter.api.Test;
@@ -13,5 +14,6 @@ public class TestAvatar extends BaseTest{
                 .enterEmailAndPassword(getLogin(), getPassword())
                 .submit();
         assertFalse(homePage.isAvatarAvailable(), "Avatar should be not visible");
+        homePage.close();
     }
 }

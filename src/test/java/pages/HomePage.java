@@ -15,4 +15,9 @@ public class HomePage{
     public SelenideElement getFriendsButton(){
         return friendsButton;
     }
+
+    public HomePage close(){
+        Selenide.closeWebDriver();
+        return this;
+    }
 }
