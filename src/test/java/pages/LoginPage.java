@@ -14,7 +14,7 @@ public class LoginPage{
     private final SelenideElement submitButton = $x("//input[@value='Войти в Одноклассники']");
 
     public LoginPage open(){
-        Selenide.open("https://ok.ru/dk?st.cmd=anonymMain");
+        Selenide.open("/");
         return this;
     }
 
@@ -29,4 +29,8 @@ public class LoginPage{
         return new HomePage();
     }
 
+    public LoginPage close(){
+        Selenide.closeWebDriver();
+        return this;
+    }
 }
